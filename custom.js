@@ -11,6 +11,9 @@ let name = document. getElementById("name").value;
 let email = document. getElementById("email").value;
 let phone = document. getElementById("phone").value;
 let quantity = document. getElementById("quantity").value;
+let message = document. getElementById("message").value;
+
+
 
 if (name == "" || email == "" || phone == "" || quantity == ""){
     alert("please fill all fields");
@@ -28,7 +31,7 @@ let orderData ={
 
 };
 
-fetch("https://script.google.com/macros/s/AKfycbxRjoBqa5TiYgiCVroykLkKLGFpLK-SAf8Wgwvj3RYWkDB-yKk1zxYdp329qRJ8wc8qPg/exec", {
+fetch("https://script.google.com/macros/s/AKfycbyc77FyitcvlEul4TB0bX6mv8ob5ibel3Odua6i3EC6qmBeAa90T6jViCa1nun4AqWygQ/exec", {
 
             method: "POST",
             body: JSON.stringify(orderData)
@@ -53,6 +56,31 @@ fetch("https://script.google.com/macros/s/AKfycbxRjoBqa5TiYgiCVroykLkKLGFpLK-SAf
      });
 
 };
+
+
+
+let image = document. getElementById("moneyplant");
+
+image. onclick = function(){
+    if(image.style.width == "500px"){
+        image.style.width = "200px";
+
+    } else {
+        image.style.width = "500px";
+
+    }
+
+
+
+};
+
+
+
+
+
+
+
+
 
 
 
