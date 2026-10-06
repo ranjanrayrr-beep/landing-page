@@ -31,7 +31,7 @@ let orderData ={
 
 };
 
-fetch("https://script.google.com/macros/s/AKfycbz1Mc1B-hMsPB5SMpxSdxdvM9faHZtd52HQHQYiz7Y_eAPi2l5VH3ujbLh0A_LkD9PPVw/exec", {
+fetch("https://script.google.com/macros/s/AKfycbxmt-w996Mt79ca8zpdg-1y1PJHzDvK5qyD2GFaLlydrOap96eeDYbXrkBi9iwfNzxJ/exec", {
 
             method: "POST",
             body: JSON.stringify(orderData)
